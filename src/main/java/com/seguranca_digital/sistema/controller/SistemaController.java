@@ -7,14 +7,10 @@ import com.seguranca_digital.sistema.domain.SistemaModel;
 import com.seguranca_digital.sistema.dto.SistemaDTO;
 import com.seguranca_digital.sistema.service.MapValidationErrorService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-
+import org.springframework.web.bind.annotation.*;
 
 import com.seguranca_digital.sistema.service.SistemaService;
 
@@ -57,4 +53,12 @@ public class SistemaController {
         List<SistemaModel> sistemas = service.listar(descricao, sigla, email);
         return ResponseEntity.ok().body(sistemas);
     }
+
+    @RequestMapping(value = "/excluir{id}", method = RequestMethod.GET)
+    public ResponseEntity<?> excluir(@PathVariable (value = "id") int id){
+        service.excluir(id);
+        return ResponseEntity.ok().build();
+    }
+
+
 }

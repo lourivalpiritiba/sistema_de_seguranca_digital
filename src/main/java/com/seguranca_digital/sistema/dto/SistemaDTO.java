@@ -1,13 +1,9 @@
 package com.seguranca_digital.sistema.dto;
 
-
 import java.io.Serializable;
-
 import javax.validation.constraints.NotBlank;
-
 import com.seguranca_digital.sistema.validation.ExtendedEmailValidator;
 import org.hibernate.validator.constraints.Length;
-
 
 public class SistemaDTO implements Serializable {
     private static final long serialVersionUID = 1L;

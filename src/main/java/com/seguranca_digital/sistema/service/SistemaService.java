@@ -7,8 +7,8 @@ import com.seguranca_digital.sistema.domain.enums.EnumStatusSistema;
 import com.seguranca_digital.sistema.dto.SistemaDTO;
 import com.seguranca_digital.sistema.repository.SistemaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-
 
 @Service
 public class SistemaService {
@@ -31,6 +31,10 @@ public class SistemaService {
                 sigla.toUpperCase(),
                 email.toUpperCase()
         );
+    }
+
+    public void excluir(int id) {
+       sistemaRepository.deleteById(id);
     }
 
     public SistemaModel fromDto(SistemaDTO objDto) {
