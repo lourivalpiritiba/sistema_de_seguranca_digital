@@ -11,7 +11,7 @@
 	<groupId>Sistema de Segurança Digital</groupId>
 	<artifactId>Sistema</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>squadra-prova</name>
+	<name>seguranca_digital</name>
 	<description>Sistema de Segurança Digital</description>
 	<properties>
 		<java.version>16</java.version>
