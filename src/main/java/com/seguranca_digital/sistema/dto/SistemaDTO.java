@@ -8,24 +8,23 @@ import org.hibernate.validator.constraints.Length;
 public class SistemaDTO implements Serializable {
     private static final long serialVersionUID = 1L;
 
-    @NotBlank(message = "Campo obrigatório")
+    @NotBlank(message = "Dados obrigatórios não informados.")
     @Length(max = 100, message = "O campo deve ter até 100 caracteres")
     private String descricao;
 
-    @NotBlank(message = "Campo obrigatório")
+    @NotBlank(message = "Dados obrigatórios não informados.")
     @Length(max = 10, message = "O campo deve ter até 10 caracteres")
     private String sigla;
 
     @Length(max = 50, message = "O campo deve ter até 50 caracteres")
     private String url;
 
-    @NotBlank(message = "Campo obrigatório")
+    @NotBlank(message = "Dados obrigatórios não informados.")
     @Length(max = 100, message = "O campo deve ter até 100 caracteres")
     @ExtendedEmailValidator
     private String email;
 
-    public SistemaDTO() {
-    }
+    public SistemaDTO() { }
 
     public SistemaDTO(String descricao, String sigla, String url, String email) {
         super();
@@ -38,7 +37,6 @@ public class SistemaDTO implements Serializable {
     public String getDescricao() {
         return descricao;
     }
-
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
@@ -46,7 +44,6 @@ public class SistemaDTO implements Serializable {
     public String getSigla() {
         return sigla;
     }
-
     public void setSigla(String sigla) {
         this.sigla = sigla;
     }
@@ -54,7 +51,6 @@ public class SistemaDTO implements Serializable {
     public String getUrl() {
         return url;
     }
-
     public void setUrl(String url) {
         this.url = url;
     }
@@ -62,7 +58,6 @@ public class SistemaDTO implements Serializable {
     public String getEmail() {
         return email;
     }
-
     public void setEmail(String email) {
         this.email = email;
     }

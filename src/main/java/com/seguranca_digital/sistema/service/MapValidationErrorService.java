@@ -19,4 +19,8 @@ public class MapValidationErrorService {
         }
         return null;
     }
+
+    public ResponseEntity<?> MapValidationErrorService(String message){
+        return new ResponseEntity<Object>(message, HttpStatus.BAD_REQUEST);
+    }
 }

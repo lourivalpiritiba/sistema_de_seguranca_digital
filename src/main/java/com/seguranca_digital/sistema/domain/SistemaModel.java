@@ -21,8 +21,7 @@ public class SistemaModel implements Serializable {
     private String email;
     private EnumStatusSistema status;
 
-    public SistemaModel() {
-    }
+    public SistemaModel() { }
 
     public SistemaModel(Long id, String descricao, String sigla, String url, String email, EnumStatusSistema status) {
         super();
@@ -37,7 +36,6 @@ public class SistemaModel implements Serializable {
     public Long getId() {
         return id;
     }
-
     public void setId(Long id) {
         this.id = id;
     }
@@ -45,7 +43,6 @@ public class SistemaModel implements Serializable {
     public String getDescricao() {
         return descricao;
     }
-
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
@@ -53,7 +50,6 @@ public class SistemaModel implements Serializable {
     public String getSigla() {
         return sigla;
     }
-
     public void setSigla(String sigla) {
         this.sigla = sigla;
     }
@@ -61,7 +57,6 @@ public class SistemaModel implements Serializable {
     public String getUrl() {
         return url;
     }
-
     public void setUrl(String url) {
         this.url = url;
     }
@@ -69,7 +64,6 @@ public class SistemaModel implements Serializable {
     public String getEmail() {
         return email;
     }
-
     public void setEmail(String email) {
         this.email = email;
     }
@@ -77,7 +71,6 @@ public class SistemaModel implements Serializable {
     public EnumStatusSistema getStatus() {
         return status;
     }
-
     public void setStatus(EnumStatusSistema status) {
         this.status = status;
     }
