@@ -1,4 +1,4 @@
-package com.seguranca_digital.sistema.service;
+package com.seguranca_digital.sistema.utils;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;

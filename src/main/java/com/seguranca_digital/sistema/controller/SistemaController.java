@@ -6,7 +6,7 @@ import javax.validation.Valid;
 import com.seguranca_digital.sistema.domain.SistemaModel;
 import com.seguranca_digital.sistema.dto.SistemaDTO;
 import com.seguranca_digital.sistema.service.MapValidationErrorService;
-import com.seguranca_digital.sistema.service.Messages;
+import com.seguranca_digital.sistema.utils.Messages;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
